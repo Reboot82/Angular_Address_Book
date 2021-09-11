@@ -1,13 +1,82 @@
-<p>NOICE</p>
-
 <div class="contacts">
+    <div class="title">New Contact:</div>
   <form (submit)="addContact()">
     <input
       type="text"
-      name="inputContact"
-      placeholder="New Contact"
+      name="customerId"
+      placeholder="Customer Id"
       class="contact-input"
-      [(ngModel)]="inputContact"
+      [(ngModel)]="customerId"
+    />
+    <input
+      type="text"
+      name="companyName"
+      placeholder="Company Name"
+      class="contact-input"
+      [(ngModel)]="companyName"
+    />
+    <input
+      type="text"
+      name="contactName"
+      placeholder="Contact Name"
+      class="contact-input"
+      [(ngModel)]="contactName"
+    />
+    <input
+      type="text"
+      name="contactTitle"
+      placeholder="Contact Title"
+      class="contact-input"
+      [(ngModel)]="contactTitle"
+    />
+    <input
+      type="text"
+      name="address"
+      placeholder="Address"
+      class="contact-input"
+      [(ngModel)]="address"
+    />
+    <input
+      type="text"
+      name="city"
+      placeholder="City"
+      class="contact-input"
+      [(ngModel)]="city"
+    />
+    <input
+      type="text"
+      name="email"
+      placeholder="Email"
+      class="contact-input"
+      [(ngModel)]="email"
+    />
+    <input
+      type="text"
+      name="postalCode"
+      placeholder="Postal Code"
+      class="contact-input"
+      [(ngModel)]="postalCode"
+    />
+    <input
+      type="text"
+      name="country"
+      placeholder="Country"
+      class="contact-input"
+      [(ngModel)]="country"
+    />
+    <input
+      type="text"
+      name="phone"
+      placeholder="Phone"
+      class="contact-input"
+      [(ngModel)]="phone"
+    />
+    <input
+      type="text"
+      name="fax"
+      placeholder="Fax"
+      class="contact-input"
+      [(ngModel)]="fax"
     />
     <input type="submit" value="Add Contact" class="contact-submit" />
   </form>
@@ -16,7 +85,7 @@
     class="contact {{ contact.favorite ? 'favorite' : '' }}"
   >
     <div class="id">{{ i }}</div>
-    <div class="content" (click)="toggleFavorite(i)">{{ contact.content }}</div>
+    <div class="content" (click)="toggleFavorite(i)">{{ contact.contactName }}</div>
     <button class="delete" (click)="deleteContact(i)">Remove</button>
   </div>
 </div>
