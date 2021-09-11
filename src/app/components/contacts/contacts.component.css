@@ -1,0 +1,53 @@
+.contact {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: 1 px solid #ddd;
+}
+.contact:nth-child(even){
+    background-color: #eee;
+}
+.contact:last-of-type {
+    border-bottom: 0;
+}
+
+.contact .id {
+    flex: 1 1 50px;
+}
+
+.contact .content {
+    flex: 1 1 100%;
+}
+
+.contact.favorite .content {
+    color: rgb(36, 15, 230);
+}
+
+.contact-input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    appearance: none;
+    border: none;
+    background-color: #f3f3f3;
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+}
+
+.contact-submit {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    background-color: #fe4881;
+    color: #fff;
+    margin: 15px auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
